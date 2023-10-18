@@ -1,6 +1,6 @@
-import './app.css';
 import Bottom from './bottom/Bottom';
 import Top from './top/Top';
+import './app.css';
 
 function App() {
   return (
