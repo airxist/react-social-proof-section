@@ -1,0 +1,16 @@
+.bottom {
+    /* border: solid 2px yellow; */
+    margin-top: 30px;
+}
+
+
+@media screen and (width > 1200px) {
+    .bottom {
+        height: calc(50vh - 30px);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: unset;
+        padding: 10px 0px;
+    }
+}

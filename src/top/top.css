@@ -1,0 +1,56 @@
+.top {
+}
+
+.intro {
+    /* padding: 0px  */
+}
+
+.title {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
+
+.desc {
+    margin: 20px 0px;
+    text-align: center;
+}
+
+@media screen and (width > 1200px) {
+    .top {
+        height: calc(50vh - 30px);
+        display: flex;
+        /* border: solid 2px red; */
+    }
+
+    .intro,
+    .rating {
+        width: 50%;
+    }
+
+    .intro {
+        /* border: solid 2px yellow; */
+    }
+
+    .rating {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
+    }
+
+
+    .title,
+    .desc {
+        text-align: left;
+    }
+
+    .title {
+        width: 100%;
+        padding-right: 200px;
+    }
+
+    .desc {
+        padding-right: 200px;
+    }
+}

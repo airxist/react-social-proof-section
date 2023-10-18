@@ -1,0 +1,42 @@
+.quote {
+    background-color: var(--very-dark-magenta);
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.quote:last-child {
+    margin-bottom: unset;
+}
+
+.up {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 0px;
+}
+
+.profile-image {
+    border-radius: 50%;
+    width: 50px;
+}
+
+@media screen and (width > 1200px) {
+    .quote {
+        width: 30%;
+        margin-bottom: unset;
+        transition: 0.5s;
+    }
+
+    .quote:hover {
+        transform: scale(1.25);
+        transition: 1.2s;
+    }
+
+    .quote:first-child {
+        align-self: flex-start;
+    }
+
+    .quote:last-child {
+        align-self: flex-end;
+    }
+}

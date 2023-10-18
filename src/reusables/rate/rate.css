@@ -1,0 +1,46 @@
+.rate {
+    background-color: var(--light-grayish-magenta);
+    padding: 15px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.rate-stars {
+    display: flex;
+    gap: 5px;
+}
+
+
+@media screen and (width > 1200px) {
+    .rate {
+        flex-direction: row;
+        justify-content: space-around;
+        width: 70%;
+        gap: 0px;
+        margin-bottom: unset;
+        animation: scaling 1s infinite alternate-reverse;
+    }
+
+    .rate:nth-child(2) {
+        align-self: center;
+        animation-delay: 0.4s;
+    }
+
+    .rate:last-child {
+        align-self: flex-end;
+        animation-delay: 0.8s;
+    }
+
+    @keyframes scaling {
+        0% {
+            transform: scale(1.12);
+        }
+        
+        100% {
+            transform: scale(0.9)
+        }
+    }
+}

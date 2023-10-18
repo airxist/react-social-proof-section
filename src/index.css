@@ -1,13 +1,95 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: lbold;
+  src: url(./assets/fonts/LeagueSpartan-Bold.ttf);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: lmed;
+  src: url(./assets/fonts/LeagueSpartan-Medium.ttf);
+}
+
+@font-face {
+  font-family: lreg;
+  src: url(./assets/fonts/LeagueSpartan-Regular.ttf);
+}
+
+/* html {
+  font-family: lmed;
+} */
+
+:root {
+  /* color/paint */
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+  --padmobile: 40px 12px;
+}
+
+@media  screen and (width > 1200px) {
+  :root {
+    --padmobile: 30px 120px;
+  }
+}
+
+/* FONT SIZE */
+.text-big {
+  font-size: 30px;
+}
+
+.text-reg {
+  font-size: 15px;
+}
+
+/* FONT FAMILY CLASSES */
+.bold {
+  font-family: lbold;
+}
+
+.med {
+  font-family: lmed;
+}
+
+.reg {
+  font-family: lreg;
+}
+
+/* FONT COLOR */
+.text-light {
+  color: var(--white);
+}
+
+.text-pink {
+  color: var(--soft-pink)
+}
+
+.text-gray {
+  color: var(--dark-grayish-magenta)
+}
+
+.text-dark {
+  color: var(--very-dark-magenta);
+}
+
+/* BORDER RADIUS */
+.round {
+  border-radius: 15px;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* padding: var(--padmobile); */
+  background-color: var(--white);
+}
+
+@media screen and (width > 1200px) {
+  .text-big {
+    font-size: 40px
+  }
 }
