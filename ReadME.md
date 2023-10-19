@@ -33,7 +33,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: (https://github.com/Dee-Maria/react-social-proof-section)
-- Live Site URL: (https://vercel.com/da-hubb/react-social-proof-section-byic)
+- Live Site URL: (https://react-social-proof-section-34oz.vercel.app/)
 
 ## My process
 
